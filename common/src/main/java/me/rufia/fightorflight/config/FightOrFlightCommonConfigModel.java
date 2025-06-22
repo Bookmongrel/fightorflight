@@ -12,7 +12,7 @@ public class FightOrFlightCommonConfigModel implements ConfigData {
     @Comment("Do more aggressive Pokemon fight back when provoked?")
     public boolean do_pokemon_attack = true;
     @Comment("Do especially aggressive Pokemon attack unprovoked?")
-    public boolean do_pokemon_attack_unprovoked = false;
+    public boolean do_pokemon_attack_unprovoked = true;
     @Comment("If the aggressive pokemon will only attack unprovoked in the dark area.(similar to the spider in Minecraft,do_pokemon_attack_unprovoked needs to be set to true")
     public boolean light_dependent_unprovoked_attack = true;
     @Comment("If failed captures can be counted as provocation?")
@@ -32,9 +32,9 @@ public class FightOrFlightCommonConfigModel implements ConfigData {
     @Comment("Pokemon below this map height (y) will always be aggressive.")
     public double always_aggro_below = -128;
     @Comment("Pokemon stops running away if the hp is not full.")
-    public boolean stop_running_after_hurt = true;
+    public boolean stop_running_after_hurt = false;
     @Comment("Wild pokemon will be slow down if the hp is not full.")
-    public boolean slow_down_after_hurt = false;
+    public boolean slow_down_after_hurt = true;
     @Comment("Pokemon with these natures are slightly more aggressive.")
     public String[] aggressive_nature = {"sassy", "hardy", "bold", "impish", "hasty"};
     @Comment("The aggression multiplier for natures above.")
